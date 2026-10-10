@@ -1,0 +1,20 @@
+{
+  "dataset_partition": "DATASET_C_PRISTINE_BENCHMARK",
+  "status": "STATUS = PENDING",
+  "pipeline_state": "PENDING_ACQUISITION_AND_LEGAL_CLEARANCE",
+  "creation_milestone": "Milestone 7",
+  "governance_rules": {
+    "zero_training_access": true,
+    "zero_validation_tuning_access": true,
+    "zero_threshold_selection_access": true,
+    "zero_calibration_tuning_access": true,
+    "quarantined_until_final_freeze": true
+  },
+  "required_provenance": {
+    "independent_institution": true,
+    "verified_license": true,
+    "animal_level_grouping_mandatory": true,
+    "cross_dataset_duplicate_tolerance": 0
+  },
+  "notes": "Infrastructure initialized for Milestone 7. Strictly held out until production release candidates are permanently frozen."
+}

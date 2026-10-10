@@ -1,0 +1,75 @@
+[
+  {
+    "dataset_name": "Lumpy Skin Images Dataset",
+    "official_url": "https://data.mendeley.com/datasets/w36hpf86j2/1",
+    "owner": "Sachin Kumar & Sourabh Shastri (University of Jammu)",
+    "license": "CC-BY-4.0",
+    "license_url": "http://creativecommons.org/licenses/by/4.0",
+    "verified": true,
+    "download_status": "DOWNLOADED_AND_VERIFIED",
+    "image_count_claimed": 1024,
+    "image_count_downloaded": 1024,
+    "classes": [
+      "LUMPY SKIN",
+      "NORMAL SKIN"
+    ],
+    "species": [
+      "Cattle"
+    ],
+    "citation": "Kumar, Sachin; Shastri, Sourabh (2022), 'Lumpy Skin Images Dataset', Mendeley Data, V1, doi: 10.17632/w36hpf86j2.1",
+    "restrictions": [
+      "Attribution required (CC-BY-4.0)",
+      "Provide link to license and indicate if changes were made"
+    ],
+    "verification_date": "2026-10-07"
+  },
+  {
+    "dataset_name": "Zenodo Bovine Mastitis Dataset (Candidate)",
+    "official_url": "https://zenodo.org/record/bovine-mastitis-clinical",
+    "owner": "Unverified / Record not found on Zenodo repository",
+    "license": "UNVERIFIED",
+    "license_url": "",
+    "verified": false,
+    "download_status": "REVIEW_REQUIRED",
+    "image_count_claimed": 780,
+    "image_count_downloaded": 0,
+    "classes": [
+      "Bovine Mastitis (Clinical)",
+      "Healthy / Normal"
+    ],
+    "species": [
+      "Cattle"
+    ],
+    "citation": "Unverified - Candidate entry in initial source_registry.json failed independent DOI/URL verification",
+    "restrictions": [
+      "Quarantined: No direct downloadable RGB dataset matching record found on Zenodo",
+      "Existing Zenodo records are research papers without public image bundles or sheep thermal imaging (TIDS)"
+    ],
+    "verification_date": "2026-10-07"
+  },
+  {
+    "dataset_name": "Mendeley Avian Pox / Pathology Dataset (Candidate)",
+    "official_url": "https://data.mendeley.com/datasets/poultry-pathology-cases",
+    "owner": "Unverified / Record not found on Mendeley Data repository",
+    "license": "UNVERIFIED",
+    "license_url": "",
+    "verified": false,
+    "download_status": "REVIEW_REQUIRED",
+    "image_count_claimed": 640,
+    "image_count_downloaded": 0,
+    "classes": [
+      "Fowl Pox",
+      "Infectious Coryza",
+      "Healthy / Normal"
+    ],
+    "species": [
+      "Poultry/Chicken"
+    ],
+    "citation": "Unverified - Candidate entry in initial source_registry.json failed independent URL verification",
+    "restrictions": [
+      "Quarantined: No direct downloadable archive found at stated URL",
+      "Existing public poultry sets on Mendeley are fecal microscopy (10.17632/8pnbzpt2k9.1), not cutaneous pox lesions"
+    ],
+    "verification_date": "2026-10-07"
+  }
+]

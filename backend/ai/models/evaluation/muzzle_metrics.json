@@ -1,0 +1,9 @@
+{
+  "task": "Task C: Muzzle Biometric Identification",
+  "total_animals": 77,
+  "total_prints": 1176,
+  "top1_retrieval_accuracy": 0.982,
+  "top5_retrieval_accuracy": 0.997,
+  "verification_eer": 0.018,
+  "evaluated_at": "2026-10-09T13:56:24Z"
+}

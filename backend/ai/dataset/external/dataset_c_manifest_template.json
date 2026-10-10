@@ -1,0 +1,31 @@
+{
+  "$schema": "AniCare_AI_Dataset_Manifest_Schema_v1",
+  "dataset_partition": "DATASET_C",
+  "status": "STATUS = PENDING",
+  "target_records_count": 0,
+  "records": [],
+  "metadata_template": {
+    "image_id": "IMG-ANI-EXT-C-0001",
+    "file_path": "external/pristine_benchmark/IMG-ANI-EXT-C-0001.jpg",
+    "species": "Cattle",
+    "disease": "Lumpy Skin Disease",
+    "disease_category": "VISUAL_ASSESSABLE",
+    "body_region": "skin_cutaneous",
+    "clinical_sign": "Dermal nodules with necrotic sit-fasts",
+    "image_source": "PENDING_NATIONAL_REFERENCE_REPOSITORY",
+    "source_organization": "PENDING_VERIFICATION",
+    "geographic_region": "India",
+    "collection_date": null,
+    "annotation_status": "VERIFIED_VETERINARY",
+    "annotator_id": null,
+    "annotation_confidence": 1.0,
+    "license": "RESTRICTED_EVALUATION_MOU",
+    "license_url": "PENDING",
+    "consent_provenance": "Institutional Clinical DTA",
+    "split": "test",
+    "animal_id": "RFID-TAG-MANDATORY",
+    "capture_device": "Field Mobile Device",
+    "image_quality": "high",
+    "notes": "Quarantined sample in Dataset C pristine benchmark."
+  }
+}

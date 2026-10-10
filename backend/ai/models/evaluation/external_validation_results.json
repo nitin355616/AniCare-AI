@@ -1,0 +1,67 @@
+{
+  "evaluation_status": "EXTERNAL_VALIDATION_PENDING",
+  "statement": "External validation pending due to lack of a legally verified independent dataset.",
+  "candidate_source": {
+    "source_id": "DATASET-B-CANDIDATE-AAU",
+    "source_name": "AAU Anand Veterinary College Clinical Teaching Hospital Archives",
+    "institution": "Anand Agricultural University (AAU)",
+    "permission_status": "PERMISSION_REQUIRED",
+    "legal_gate_passed": false
+  },
+  "frozen_model": "EfficientNet-B0 (anicare_vision_bovine_v1.onnx)",
+  "frozen_operating_threshold": 0.5,
+  "dataset_a_baselines": {
+    "validation": {
+      "dataset": "Dataset A (Validation)",
+      "sample_count": 135,
+      "lsd_count": 40,
+      "healthy_count": 95,
+      "threshold": 0.5,
+      "sensitivity": 0.925,
+      "specificity": 0.9474,
+      "macro_f1": 0.9329,
+      "status": "OFFICIAL_VALIDATION_BENCHMARK"
+    },
+    "test": {
+      "dataset": "Dataset A (Held-Out Test)",
+      "sample_count": 138,
+      "lsd_count": 42,
+      "healthy_count": 96,
+      "threshold": 0.5,
+      "sensitivity": 0.8095,
+      "specificity": 0.9792,
+      "macro_f1": 0.9106,
+      "roc_auc": 0.9452,
+      "status": "OFFICIAL_HISTORICAL_TEST_BENCHMARK"
+    }
+  },
+  "external_metrics": null,
+  "domain_shift_dimensions": {
+    "1_resolution": {
+      "dataset_a": "Variable mobile captures (mean ~800x600, compressed to 224x224)",
+      "dataset_b": "High-resolution SLR teaching hospital archives (>1920x1080)",
+      "shift_risk": "Downsampling artifacts may suppress micro-papule epidermal textures."
+    },
+    "2_lighting": {
+      "dataset_a": "High-contrast tropical outdoor sunlight with harsh oblique shadows",
+      "dataset_b": "Indoor examination bay with fluorescent lighting",
+      "shift_risk": "Shadow contrast variation affects edge activation."
+    },
+    "3_background": {
+      "dataset_a": "High clutter: earthen floors, straw, corrugated tin",
+      "dataset_b": "Clinical examination chutes and clean concrete hospital flooring",
+      "shift_risk": "Reduced background clutter lowers false positive distractors."
+    },
+    "4_framing": {
+      "dataset_a": "Pasture standoffs and oblique flank angles",
+      "dataset_b": "Close-up macro dermatology focused on primary lesions",
+      "shift_risk": "Macro framing improves lesion resolution."
+    },
+    "5_presentation": {
+      "dataset_a": "Predominantly late-stage generalized eruptions",
+      "dataset_b": "Includes early ambulatory cases and subtle pre-eruptive papules",
+      "shift_risk": "Early papules represent primary false negative vulnerability."
+    }
+  },
+  "next_scientific_action": "Execute formal Data Transfer Agreement (DTA) with candidate institution (AAU Anand / ICAR-DFMD) prior to publishing numerical external benchmark."
+}

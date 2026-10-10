@@ -1,0 +1,212 @@
+<USER_REQUEST>
+  # AniCare AI — Multi-Dataset Integration, Model Training & Website Integration
+
+You are working on my existing AniCare AI project.
+
+**Existing project root:** `D:\AniCare-AI`
+**Backend:** `D:\AniCare-AI\backend`
+**Frontend:** `D:\AniCare-AI\frontend` (inspect the actual frontend location if different).
+
+My goal is to integrate all verified datasets, train and evaluate suitable AI models, and connect the resulting models to the existing AniCare AI website. The website must display actual dataset images and provide real model predictions rather than hardcoded demo results.
+
+## 1. Existing and new dataset locations
+
+### Existing cattle disease datasets
+
+* `D:\AniCare-AI\backend\datasets\FMD_Cattle`
+* `D:\AniCare-AI\backend\datasets\archive`
+
+These contain the previously audited cattle disease data, including Healthy, FMD and LSD categories. Reinspect the actual folders and the existing audit report before relying on these labels.
+
+### New datasets to integrate
+
+1. `D:\Downloads All\Sahiwal Cattle and Murrah Buffalo Muzzle Image Dat\Sahiwal Cattle and Murrah Buffalo Muzzle Image Dat`
+2. `D:\Downloads All\Class3\image-data`
+3. `D:\Downloads All\test`
+
+Inspect all three paths recursively. Confirm that they exist, determine their actual directory structures, image counts, formats, labels, annotation files, metadata and source/license information.
+
+Do not assume that the third path named `test` contains correctly labeled test images until its contents are inspected.
+
+## 2. Safety and dataset audit
+
+Before training:
+
+* Perform a read-only inspection first.
+* Do not delete, move, rename or overwrite original files.
+* Preserve all existing AniCare AI functionality and file/folder names.
+* Identify unreadable images, unsupported formats, duplicate images and conflicting labels.
+* Use hashes to detect exact duplicates across datasets.
+* Investigate suspected near-duplicates where practical.
+* Keep a dataset audit report containing image counts, class counts, sources, licenses, exclusions and reasons for exclusions.
+* Verify whether labels represent animal species, breeds, muzzle identity or diseases.
+* Never interpret a cow/buffalo muzzle-identification label as a disease label.
+* Do not invent labels, provenance or licenses.
+
+If a path does not exist or labels are ambiguous, report the issue and continue with datasets that can be verified.
+
+## 3. Build a reproducible dataset manifest
+
+Create a manifest describing each eligible image with fields such as:
+
+* Relative or safely resolved image path
+* Dataset name and source
+* Verified task type
+* Verified class label
+* File hash
+* Image dimensions
+* Assigned split, where appropriate
+* Exclusion status and reason, if excluded
+
+Store dataset paths in configuration or environment variables instead of hardcoding multiple absolute paths throughout the code.
+
+Use separate manifests and data pipelines for different tasks.
+
+### Task A: Cattle disease classification
+
+Use only verified and appropriately labeled Healthy, FMD and LSD disease images.
+
+### Task B: Animal species / livestock image classification
+
+Use only verified species-labeled images, such as cattle, buffalo, goat, dog, cat or sheep, if these categories actually exist in the inspected data.
+
+### Task C: Muzzle identification
+
+If the Sahiwal Cattle and Murrah Buffalo dataset contains individual animal identities or muzzle-specific labels, treat it as an identification or classification task, not a disease classifier. Confirm the annotation structure before implementation.
+
+Do not combine incompatible labels or train one classifier across unrelated tasks.
+
+## 4. Prevent data leakage
+
+* Detect exact duplicate images across every dataset before splitting.
+* Keep duplicate images and related images from the same source/animal/group in the same split.
+* Avoid training/validation/test leakage.
+* Use a reproducible random seed.
+* Create train/validation/test splits for eligible training datasets, normally 70%/15%/15%, adjusted when necessary for small classes.
+* Keep the existing `D:\Downloads All\test` dataset isolated as an external test set if it is genuinely labeled, appropriate for the task, and has not been used for training or model selection.
+* Do not use test results to tune the model.
+* If the existing test data has unknown provenance or overlaps with training images, disclose the limitation and do not describe it as an independent test set.
+
+## 5. Train suitable real models
+
+First inspect the current AI inference code and dependencies. Reuse suitable existing code where possible.
+
+For each valid task:
+
+* Select an appropriate image-classification architecture based on dataset size and hardware.
+* Prefer transfer learning with a pretrained model when suitable.
+* Check class imbalance and use appropriate handling when needed.
+* Resize and normalize images consistently.
+* Use data augmentation only on training images.
+* Train using the training split and select the model using validation data.
+* Save the trained model, class mapping, preprocessing configuration, training configuration and metrics.
+* Record random seed, software versions, dataset manifest version and training parameters.
+* Use GPU if available; otherwise use a practical CPU configuration.
+* Do not download huge pretrained weights without checking network availability, storage and compatibility first.
+* If training fails or resources are insufficient, report the exact error and provide a safe way to resume. Never pretend training completed.
+
+Do not export a model to ONNX unless the chosen framework and model support a successful, verified export. Retain the original trained model as well.
+
+## 6. Evaluate the model honestly
+
+After training, calculate actual held-out metrics:
+
+* Accuracy
+* Per-class precision
+* Per-class recall
+* Per-class F1-score
+* Macro and weighted F1-score, where appropriate
+* Confusion matrix
+* Number of evaluated examples per class
+
+Save a machine-readable evaluation report and a readable summary.
+
+Compare training and validation performance for signs of overfitting.
+
+Never fabricate accuracy, evaluation scores, training history or model predictions. If evaluation cannot be completed, state that clearly.
+
+## 7. Integrate trained models into AniCare AI
+
+Inspect the existing backend routes, services, inference engine and frontend before modifying anything.
+
+* Connect each trained model to the correct inference service.
+* Keep disease classification, animal species classification and muzzle identification as separate tasks.
+* Ensure the API uses the real saved model and its correct class mapping.
+* Remove hardcoded/demo predictions from production inference paths, but preserve demo mode only if it is explicitly labeled as demo.
+* Never display a fabricated confidence score.
+* Return clear errors when a model is missing, an image is invalid or a prediction cannot be made.
+* Add suitable image validation and file-size limits.
+* Keep the existing API contract compatible where practical.
+* Do not automatically diagnose a disease based on animal species or muzzle identity.
+
+For suspected serious or contagious animal diseases, display a veterinary consultation recommendation. The application must not claim to replace a veterinarian.
+
+## 8. Add a Dataset Explorer to the existing website
+
+Create or improve the Dataset Explorer within the current frontend.
+
+It must display actual images from configured datasets and include:
+
+* Dataset selector
+* Task/category filters
+* Verified class labels
+* Actual image counts
+* Paginated image thumbnails
+* Dataset source and license information, when known
+* Dataset audit summary
+* Excluded/duplicate image summary
+* Training status
+* Completed training metrics and confusion matrix, only when available
+
+Implement or adapt these endpoints according to the existing API design:
+
+* `GET /api/datasets/info`
+* `GET /api/datasets/gallery`
+* `GET /api/models/status`
+* `GET /api/models/metrics`
+
+Validate query parameters, restrict image serving to approved dataset roots, and do not expose arbitrary filesystem access.
+
+## 9. Deliverables
+
+Organize the implementation consistently with the existing project. Produce:
+
+1. `dataset_audit_report.md`
+2. Reproducible dataset manifest files
+3. Separate training scripts/configurations for each valid task
+4. Trained model artifacts, if training succeeds
+5. Evaluation metrics and confusion matrix
+6. Dataset Explorer integrated into the existing website
+7. Updated backend inference integration
+8. Updated dependency list and configuration example
+9. Exact commands to audit, train, evaluate, and run the application
+10. A list of all modified and newly created files
+
+Do not include large image datasets or model binaries in Git by default. Update `.gitignore` appropriately without removing existing ignore rules.
+
+## 10. Execution order
+
+Work in this exact order:
+
+Phase 1: Inspect the current project and all dataset paths. Produce the audit report.
+
+Phase 2: Resolve label conflicts, identify compatible tasks, and create safe manifests and leakage-resistant splits.
+
+Phase 3: Implement and test Dataset Explorer using actual images.
+
+Phase 4: Train the valid models and evaluate them on held-out data.
+
+Phase 5: Integrate trained models into the existing backend and frontend.
+
+Phase 6: Run available tests and launch the existing application. Verify real dataset images, API responses, model loading and prediction behavior.
+
+Do not stop after writing a plan. Implement the work in phases, test each phase, and report what genuinely succeeded and what remains incomplete.
+
+Before any destructive action, ask for my approval. If a task cannot be completed, explain the blocker and give the next exact step.
+
+**Final requirement:** The existing AniCare AI project must remain functional, the dataset images must be visible in the website, and all claims about training and accuracy must be supported by actual execution results.
+
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-10-09T18:38:22+05:30.
+</ADDITIONAL_METADATA>

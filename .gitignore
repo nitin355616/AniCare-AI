@@ -1,0 +1,25 @@
+# Node & Frontend
+node_modules/
+dist/
+.vite/
+
+# Python Virtual Environments & Bytecode
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Local Dataset Storage & Raw Image Archives (Do not commit gigabyte datasets)
+backend/datasets/
+backend/uploads/*.jpg
+backend/uploads/*.png
+backend/uploads/*.webp
+backend/uploads/*.jpeg
+
+# OS Metadata & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,40 @@
+{
+  "provenance_metadata": {
+    "dataset_name": "Lumpy Skin Images Dataset",
+    "doi": "10.17632/w36hpf86j2.1",
+    "license": "CC-BY-4.0",
+    "license_status": "APPROVED_AND_VERIFIED",
+    "source_reported_count": 1024,
+    "actual_downloaded_count": 1024,
+    "quarantined_count": 118,
+    "final_validated_count": 906,
+    "animal_grouping_available": false,
+    "animal_grouping_limitation_note": "Individual cow RFID/ear-tags not recorded in source publication. Image-level stratified partitioning applied with strict exact & near-duplicate cross-split quarantine."
+  },
+  "validation_metrics": {
+    "total_images": 906,
+    "valid_images": 906,
+    "invalid_images": 0,
+    "duplicate_images": 0,
+    "classes": [
+      "Healthy / Normal",
+      "Lumpy Skin Disease"
+    ],
+    "images_per_class": {
+      "Lumpy Skin Disease": 271,
+      "Healthy / Normal": 635
+    },
+    "species_distribution": {
+      "Cattle": 906
+    },
+    "split_distribution": {
+      "train": 633,
+      "validation": 135,
+      "test": 138
+    },
+    "leakage_warnings": [],
+    "license_warnings": [],
+    "quality_warnings": [],
+    "recommended_actions": []
+  }
+}

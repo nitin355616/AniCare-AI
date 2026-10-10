@@ -1,0 +1,58 @@
+[
+  {
+    "case_type": "TP",
+    "image_id": "ANI-LSD-0098",
+    "description": "True Positive: Prominent cutaneous nodular lesions correctly localized",
+    "target_class_idx": 1,
+    "status": "SUCCESS",
+    "heatmap_filename": "ANI-LSD-0098_tp_gradcam.jpg",
+    "heatmap_url": "/uploads/explanations/ANI-LSD-0098_tp_gradcam.jpg",
+    "peak_activation_coords": [
+      0.857,
+      0.0
+    ],
+    "interpretation": "Areas contributing to the model's visual assessment"
+  },
+  {
+    "case_type": "FN",
+    "image_id": "ANI-LSD-0013",
+    "description": "False Negative: Early/subtle lesions diffused across animal flank without focused nodular peak",
+    "target_class_idx": 1,
+    "status": "SUCCESS",
+    "heatmap_filename": "ANI-LSD-0013_fn_gradcam.jpg",
+    "heatmap_url": "/uploads/explanations/ANI-LSD-0013_fn_gradcam.jpg",
+    "peak_activation_coords": [
+      0.714,
+      0.857
+    ],
+    "interpretation": "Areas contributing to the model's visual assessment"
+  },
+  {
+    "case_type": "TN",
+    "image_id": "ANI-LSD-0623",
+    "description": "True Negative: Uniform healthy cutaneous texture without circumscribed activation",
+    "target_class_idx": 0,
+    "status": "SUCCESS",
+    "heatmap_filename": "ANI-LSD-0623_tn_gradcam.jpg",
+    "heatmap_url": "/uploads/explanations/ANI-LSD-0623_tn_gradcam.jpg",
+    "peak_activation_coords": [
+      0.571,
+      0.286
+    ],
+    "interpretation": "Areas contributing to the model's visual assessment"
+  },
+  {
+    "case_type": "FP",
+    "image_id": "ANI-LSD-0381",
+    "description": "False Positive: Prominent natural skin folds and harsh shadow boundaries triggered spurious activation",
+    "target_class_idx": 1,
+    "status": "SUCCESS",
+    "heatmap_filename": "ANI-LSD-0381_fp_gradcam.jpg",
+    "heatmap_url": "/uploads/explanations/ANI-LSD-0381_fp_gradcam.jpg",
+    "peak_activation_coords": [
+      0.286,
+      0.571
+    ],
+    "interpretation": "Areas contributing to the model's visual assessment"
+  }
+]

@@ -1,0 +1,95 @@
+{
+  "evaluation_status": "EXTERNAL_VALIDATION_PENDING",
+  "statement": "External validation pending due to lack of a legally verified independent dataset.",
+  "candidate_source": {
+    "source_id": "DATASET-B-CANDIDATE-AAU",
+    "dataset_name": "AAU Anand Veterinary College Clinical Teaching Hospital Archives",
+    "provider": "College of Veterinary Science & Animal Husbandry, Anand Agricultural University",
+    "institution": "Anand Agricultural University (AAU)",
+    "official_url": "https://www.aau.in/veterinary-college-anand",
+    "license": "Institutional Educational Use / University Clinical IP",
+    "license_verified": false,
+    "permission_status": "PERMISSION_REQUIRED",
+    "permission_granted": false,
+    "notes": "High veterinary fidelity. Academic collaboration proposal prepared for formal data sharing under University DTA."
+  },
+  "frozen_model": "EfficientNet-B0 (anicare_vision_bovine_v1.onnx)",
+  "frozen_operating_threshold": 0.5,
+  "dataset_a_baselines": {
+    "validation": {
+      "dataset": "Dataset A (Validation)",
+      "sample_count": 135,
+      "lsd_count": 40,
+      "healthy_count": 95,
+      "threshold": 0.5,
+      "sensitivity": 0.925,
+      "specificity": 0.9474,
+      "macro_f1": 0.9329,
+      "status": "OFFICIAL_VALIDATION_BENCHMARK"
+    },
+    "test": {
+      "dataset": "Dataset A (Held-Out Test)",
+      "sample_count": 138,
+      "lsd_count": 42,
+      "healthy_count": 96,
+      "threshold": 0.5,
+      "sensitivity": 0.8095,
+      "specificity": 0.9792,
+      "macro_f1": 0.9106,
+      "roc_auc": 0.9452,
+      "status": "OFFICIAL_HISTORICAL_TEST_BENCHMARK"
+    }
+  },
+  "external_metrics": null,
+  "domain_shift_analysis": {
+    "dimension_comparisons": {
+      "1_image_resolution": {
+        "original_dataset_a": "Variable mobile phone captures (mean ~800x600, compressed to 224x224).",
+        "candidate_dataset_b": "High-resolution clinical SLR teaching hospital archives (>1920x1080).",
+        "shift_assessment": "Performance degradation may indicate distribution shift due to downsampling artifacts."
+      },
+      "2_camera_device": {
+        "original_dataset_a": "Diverse uncalibrated consumer mobile devices.",
+        "candidate_dataset_b": "Semi-standardized veterinary clinical photography with consistent white balance.",
+        "shift_assessment": "Color temperature and lens distortion differences may affect epidermal texture activations."
+      },
+      "3_lighting_conditions": {
+        "original_dataset_a": "High-contrast tropical outdoor sunlight with oblique structural shadows.",
+        "candidate_dataset_b": "Indoor examination bay with fluorescent and daylight illumination.",
+        "shift_assessment": "Shadow contrast variation is a known sensitivity driver."
+      },
+      "4_background_complexity": {
+        "original_dataset_a": "High clutter (earthen floors, straw bedding, corrugated tin barns).",
+        "candidate_dataset_b": "Clinical restraint chutes and concrete veterinary hospital flooring.",
+        "shift_assessment": "Reduced background clutter in hospital settings typically lowers false-positive distractors."
+      },
+      "5_animal_framing": {
+        "original_dataset_a": "Mix of whole-body pasture standoffs and oblique flank angles.",
+        "candidate_dataset_b": "Close-up macro dermatology captures centered on primary nodular eruptions.",
+        "shift_assessment": "Macro framing directly addresses whole-animal resolution dilution."
+      },
+      "6_disease_presentation": {
+        "original_dataset_a": "Predominantly late-stage generalized eruptions with prominent umbilicated nodules.",
+        "candidate_dataset_b": "Includes early ambulatory presentations and subtle pre-eruptive papules.",
+        "shift_assessment": "Early subtle lesions represent the most challenging failure mode (sensitivity vulnerability)."
+      },
+      "7_geography": {
+        "original_dataset_a": "South Asian subcontinental field outbreaks.",
+        "candidate_dataset_b": "Western Indian agro-climatic dairy belt (Gujarat, AAU Anand catchment).",
+        "shift_assessment": "Similar endemic agro-climatic zone; breed overlap is high."
+      },
+      "8_institution": {
+        "original_dataset_a": "Multi-center academic consortium.",
+        "candidate_dataset_b": "State Agricultural University Teaching Hospital.",
+        "shift_assessment": "Different institutional diagnostic protocols and case selection criteria."
+      },
+      "9_acquisition_conditions": {
+        "original_dataset_a": "Field outbreak emergency documentation during acute surges.",
+        "candidate_dataset_b": "Scheduled clinical consultation and inpatient veterinary treatment.",
+        "shift_assessment": "Cleanliness of cattle coats is higher in clinical admissions than in muddy field pastures."
+      }
+    },
+    "cautious_conclusion": "Observed distribution differences indicate potential domain shift between field outbreak photography and hospital clinical archives. Any performance variation upon external validation should be analyzed against these 9 factors rather than assumed to be random."
+  },
+  "next_scientific_action": "Execute formal Data Transfer Agreement (DTA) with candidate institution (AAU Anand / ICAR-DFMD) prior to publishing numerical external benchmark."
+}

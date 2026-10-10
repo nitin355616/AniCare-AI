@@ -1,0 +1,155 @@
+{
+  "total_false_negatives": 8,
+  "category_distribution": {
+    "EARLY_SUBTLE_PAPULES": 2,
+    "DISTANT_WHOLE_ANIMAL_FRAMING": 2,
+    "SMALL_LESION_AREA": 2,
+    "MUD_DEBRIS_OBSTRUCTION": 1,
+    "UNKNOWN_VISUAL_FAILURE": 1
+  },
+  "records": [
+    {
+      "sample_id": "ANI-LSD-0027",
+      "file_path": "ai/dataset/raw/lumpy_skin_disease/Lumpy Skin/Lumpy_Skin_122.png",
+      "true_class": "Lumpy Skin Disease",
+      "predicted_class": "Healthy / Normal",
+      "predicted_confidence": 0.5013,
+      "lsd_probability": 0.4987,
+      "failure_category": "EARLY_SUBTLE_PAPULES",
+      "observed_visual_characteristics": [
+        "Early flat papular elevation lacking central necrosis or ulcerated umbilication",
+        "Near-boundary model probability (p_lsd = 0.499)",
+        "Lesion margins visually resemble natural cutaneous grain"
+      ],
+      "addressable_by_preprocessing": true,
+      "addressable_by_architecture": true,
+      "clinical_risk_mitigation": "Adjust operating threshold from 0.50 to safety-prioritized tier (e.g. 0.40) & multi-scale patch zoom.",
+      "limitations": "Pre-ulcerative stage has lower visual contrast; clinical signs (pyrexia) must augment triage."
+    },
+    {
+      "sample_id": "ANI-LSD-0109",
+      "file_path": "ai/dataset/raw/lumpy_skin_disease/Lumpy Skin/Lumpy_Skin_199.png",
+      "true_class": "Lumpy Skin Disease",
+      "predicted_class": "Healthy / Normal",
+      "predicted_confidence": 0.7879,
+      "lsd_probability": 0.2121,
+      "failure_category": "DISTANT_WHOLE_ANIMAL_FRAMING",
+      "observed_visual_characteristics": [
+        "Distant camera framing (>3 meters); animal body occupies wide field-of-view",
+        "Individual nodules occupy <4% of total pixel area",
+        "Severe resolution attenuation upon 224x224 downsampling"
+      ],
+      "addressable_by_preprocessing": true,
+      "addressable_by_architecture": true,
+      "clinical_risk_mitigation": "Multi-crop / sliding window tiled inference and camera guidance overlay in UI.",
+      "limitations": "Without high-resolution zoom or closer camera approach, tiny lesions lose high frequencies."
+    },
+    {
+      "sample_id": "ANI-LSD-0179",
+      "file_path": "ai/dataset/raw/lumpy_skin_disease/Lumpy Skin/Lumpy_Skin_265.png",
+      "true_class": "Lumpy Skin Disease",
+      "predicted_class": "Healthy / Normal",
+      "predicted_confidence": 0.563,
+      "lsd_probability": 0.437,
+      "failure_category": "SMALL_LESION_AREA",
+      "observed_visual_characteristics": [
+        "Localized cluster of 3-5 small nodules on lateral flank",
+        "Remainder of body surface is healthy skin, diluting global average pooling activation",
+        "Near-boundary model score (p_lsd = 0.437)"
+      ],
+      "addressable_by_preprocessing": true,
+      "addressable_by_architecture": true,
+      "clinical_risk_mitigation": "Tiled patch inference and attention-weighted pooling.",
+      "limitations": "Global pooling naturally averages out sparse activations against large background skin."
+    },
+    {
+      "sample_id": "ANI-LSD-0151",
+      "file_path": "ai/dataset/raw/lumpy_skin_disease/Lumpy Skin/Lumpy_Skin_239.png",
+      "true_class": "Lumpy Skin Disease",
+      "predicted_class": "Healthy / Normal",
+      "predicted_confidence": 0.872,
+      "lsd_probability": 0.128,
+      "failure_category": "DISTANT_WHOLE_ANIMAL_FRAMING",
+      "observed_visual_characteristics": [
+        "Distant camera framing (>3 meters); animal body occupies wide field-of-view",
+        "Individual nodules occupy <4% of total pixel area",
+        "Severe resolution attenuation upon 224x224 downsampling"
+      ],
+      "addressable_by_preprocessing": true,
+      "addressable_by_architecture": true,
+      "clinical_risk_mitigation": "Multi-crop / sliding window tiled inference and camera guidance overlay in UI.",
+      "limitations": "Without high-resolution zoom or closer camera approach, tiny lesions lose high frequencies."
+    },
+    {
+      "sample_id": "ANI-LSD-0167",
+      "file_path": "ai/dataset/raw/lumpy_skin_disease/Lumpy Skin/Lumpy_Skin_253.png",
+      "true_class": "Lumpy Skin Disease",
+      "predicted_class": "Healthy / Normal",
+      "predicted_confidence": 0.6684,
+      "lsd_probability": 0.3316,
+      "failure_category": "MUD_DEBRIS_OBSTRUCTION",
+      "observed_visual_characteristics": [
+        "Dried mud cakes and pasture debris occluding epidermal boundary",
+        "Irregular surface contour confounding convolutional texture filters",
+        "Photometric gradient energy: 18.54"
+      ],
+      "addressable_by_preprocessing": false,
+      "addressable_by_architecture": false,
+      "clinical_risk_mitigation": "Farmer UX instructions: Clean animal coat with damp cloth before diagnostic capture.",
+      "limitations": "Vision models cannot penetrate physical opaque organic crusts covering dermal tissue."
+    },
+    {
+      "sample_id": "ANI-LSD-0217",
+      "file_path": "ai/dataset/raw/lumpy_skin_disease/Lumpy Skin/Lumpy_Skin_322.png",
+      "true_class": "Lumpy Skin Disease",
+      "predicted_class": "Healthy / Normal",
+      "predicted_confidence": 0.5126,
+      "lsd_probability": 0.4874,
+      "failure_category": "EARLY_SUBTLE_PAPULES",
+      "observed_visual_characteristics": [
+        "Early flat papular elevation lacking central necrosis or ulcerated umbilication",
+        "Near-boundary model probability (p_lsd = 0.487)",
+        "Lesion margins visually resemble natural cutaneous grain"
+      ],
+      "addressable_by_preprocessing": true,
+      "addressable_by_architecture": true,
+      "clinical_risk_mitigation": "Adjust operating threshold from 0.50 to safety-prioritized tier (e.g. 0.40) & multi-scale patch zoom.",
+      "limitations": "Pre-ulcerative stage has lower visual contrast; clinical signs (pyrexia) must augment triage."
+    },
+    {
+      "sample_id": "ANI-LSD-0072",
+      "file_path": "ai/dataset/raw/lumpy_skin_disease/Lumpy Skin/Lumpy_Skin_164.png",
+      "true_class": "Lumpy Skin Disease",
+      "predicted_class": "Healthy / Normal",
+      "predicted_confidence": 0.5776,
+      "lsd_probability": 0.4224,
+      "failure_category": "SMALL_LESION_AREA",
+      "observed_visual_characteristics": [
+        "Localized cluster of 3-5 small nodules on lateral flank",
+        "Remainder of body surface is healthy skin, diluting global average pooling activation",
+        "Near-boundary model score (p_lsd = 0.422)"
+      ],
+      "addressable_by_preprocessing": true,
+      "addressable_by_architecture": true,
+      "clinical_risk_mitigation": "Tiled patch inference and attention-weighted pooling.",
+      "limitations": "Global pooling naturally averages out sparse activations against large background skin."
+    },
+    {
+      "sample_id": "ANI-LSD-0013",
+      "file_path": "ai/dataset/raw/lumpy_skin_disease/Lumpy Skin/Lumpy_Skin_11.png",
+      "true_class": "Lumpy Skin Disease",
+      "predicted_class": "Healthy / Normal",
+      "predicted_confidence": 0.7797,
+      "lsd_probability": 0.2203,
+      "failure_category": "UNKNOWN_VISUAL_FAILURE",
+      "observed_visual_characteristics": [
+        "No conclusive visual defect (blur/lighting/mud) clearly explains classification failure.",
+        "Residual internal activation error (p_lsd = 0.220)"
+      ],
+      "addressable_by_preprocessing": false,
+      "addressable_by_architecture": true,
+      "clinical_risk_mitigation": "Include in future human-in-the-loop expert review cohort.",
+      "limitations": "Inherent deep neural network generalization variance."
+    }
+  ]
+}

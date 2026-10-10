@@ -1,0 +1,603 @@
+{
+  "selected_model": {
+    "key": "efficientnet_b0_focal",
+    "architecture": "efficientnet_b0",
+    "loss_type": "focal",
+    "val_accuracy": 0.9481,
+    "val_macro_f1": 0.9383,
+    "val_lsd_recall": 0.925,
+    "val_lsd_precision": 0.9024,
+    "val_healthy_specificity": 0.9579,
+    "val_ece": 0.148,
+    "avg_cpu_latency_ms": 39.05,
+    "parameters_total": 4010110,
+    "checkpoint_size_mb": 15.59,
+    "best_val_metrics": {
+      "accuracy": 0.9481,
+      "macro_f1": 0.9383,
+      "macro_precision": 0.9353,
+      "macro_recall": 0.9414,
+      "lsd_sensitivity_recall": 0.925,
+      "lsd_precision": 0.9024,
+      "lsd_f1": 0.9136,
+      "healthy_specificity": 0.9579,
+      "healthy_precision": 0.9681,
+      "healthy_f1": 0.963,
+      "roc_auc": 0.9508,
+      "pr_auc": 0.9095,
+      "confusion_matrix": {
+        "true_negatives_healthy": 91,
+        "false_positives_false_alarm": 4,
+        "false_negatives_missed_lsd": 3,
+        "true_positives_detected_lsd": 37,
+        "raw_matrix": [
+          [
+            91,
+            4
+          ],
+          [
+            3,
+            37
+          ]
+        ]
+      },
+      "per_class": {
+        "Healthy / Normal": {
+          "precision": 0.9681,
+          "recall": 0.9579,
+          "f1": 0.963,
+          "support": 95
+        },
+        "Lumpy Skin Disease": {
+          "precision": 0.9024,
+          "recall": 0.925,
+          "f1": 0.9136,
+          "support": 40
+        }
+      },
+      "ece": 0.148,
+      "ece_details": {
+        "ece": 0.148,
+        "bins": [
+          {
+            "bin": "[0.50, 0.60]",
+            "sample_count": 15,
+            "accuracy": 0.8667,
+            "confidence": 0.5553,
+            "gap": 0.3114
+          },
+          {
+            "bin": "[0.60, 0.70]",
+            "sample_count": 19,
+            "accuracy": 0.9474,
+            "confidence": 0.6519,
+            "gap": 0.2954
+          },
+          {
+            "bin": "[0.70, 0.80]",
+            "sample_count": 26,
+            "accuracy": 0.9615,
+            "confidence": 0.7578,
+            "gap": 0.2037
+          },
+          {
+            "bin": "[0.80, 0.90]",
+            "sample_count": 35,
+            "accuracy": 0.9714,
+            "confidence": 0.8528,
+            "gap": 0.1186
+          },
+          {
+            "bin": "[0.90, 1.00]",
+            "sample_count": 40,
+            "accuracy": 0.95,
+            "confidence": 0.9436,
+            "gap": 0.0064
+          }
+        ]
+      },
+      "failure_count": 7,
+      "false_negatives_count": 3,
+      "false_positives_count": 4
+    }
+  },
+  "optimal_temperature": 1.4415,
+  "validation_benchmark_comparison": [
+    {
+      "key": "mobilenet_v3_large_focal",
+      "architecture": "mobilenet_v3_large",
+      "loss_type": "focal",
+      "val_accuracy": 0.9111,
+      "val_macro_f1": 0.8949,
+      "val_lsd_recall": 0.875,
+      "val_lsd_precision": 0.8333,
+      "val_healthy_specificity": 0.9263,
+      "val_ece": 0.0689,
+      "avg_cpu_latency_ms": 25.19,
+      "parameters_total": 4204594,
+      "checkpoint_size_mb": 16.24,
+      "best_val_metrics": {
+        "accuracy": 0.9111,
+        "macro_f1": 0.8949,
+        "macro_precision": 0.8898,
+        "macro_recall": 0.9007,
+        "lsd_sensitivity_recall": 0.875,
+        "lsd_precision": 0.8333,
+        "lsd_f1": 0.8537,
+        "healthy_specificity": 0.9263,
+        "healthy_precision": 0.9462,
+        "healthy_f1": 0.9362,
+        "roc_auc": 0.9555,
+        "pr_auc": 0.9113,
+        "confusion_matrix": {
+          "true_negatives_healthy": 88,
+          "false_positives_false_alarm": 7,
+          "false_negatives_missed_lsd": 5,
+          "true_positives_detected_lsd": 35,
+          "raw_matrix": [
+            [
+              88,
+              7
+            ],
+            [
+              5,
+              35
+            ]
+          ]
+        },
+        "per_class": {
+          "Healthy / Normal": {
+            "precision": 0.9462,
+            "recall": 0.9263,
+            "f1": 0.9362,
+            "support": 95
+          },
+          "Lumpy Skin Disease": {
+            "precision": 0.8333,
+            "recall": 0.875,
+            "f1": 0.8537,
+            "support": 40
+          }
+        },
+        "ece": 0.0689,
+        "ece_details": {
+          "ece": 0.0689,
+          "bins": [
+            {
+              "bin": "[0.50, 0.60]",
+              "sample_count": 10,
+              "accuracy": 0.6,
+              "confidence": 0.563,
+              "gap": 0.037
+            },
+            {
+              "bin": "[0.60, 0.70]",
+              "sample_count": 16,
+              "accuracy": 0.75,
+              "confidence": 0.6506,
+              "gap": 0.0994
+            },
+            {
+              "bin": "[0.70, 0.80]",
+              "sample_count": 17,
+              "accuracy": 0.9412,
+              "confidence": 0.7607,
+              "gap": 0.1805
+            },
+            {
+              "bin": "[0.80, 0.90]",
+              "sample_count": 31,
+              "accuracy": 0.9677,
+              "confidence": 0.8591,
+              "gap": 0.1086
+            },
+            {
+              "bin": "[0.90, 1.00]",
+              "sample_count": 61,
+              "accuracy": 0.9672,
+              "confidence": 0.9524,
+              "gap": 0.0148
+            }
+          ]
+        },
+        "failure_count": 12,
+        "false_negatives_count": 5,
+        "false_positives_count": 7
+      }
+    },
+    {
+      "key": "mobilenet_v3_large_weighted_ce",
+      "architecture": "mobilenet_v3_large",
+      "loss_type": "weighted_ce",
+      "val_accuracy": 0.9111,
+      "val_macro_f1": 0.8949,
+      "val_lsd_recall": 0.875,
+      "val_lsd_precision": 0.8333,
+      "val_healthy_specificity": 0.9263,
+      "val_ece": 0.0478,
+      "avg_cpu_latency_ms": 24.19,
+      "parameters_total": 4204594,
+      "checkpoint_size_mb": 16.25,
+      "best_val_metrics": {
+        "accuracy": 0.9111,
+        "macro_f1": 0.8949,
+        "macro_precision": 0.8898,
+        "macro_recall": 0.9007,
+        "lsd_sensitivity_recall": 0.875,
+        "lsd_precision": 0.8333,
+        "lsd_f1": 0.8537,
+        "healthy_specificity": 0.9263,
+        "healthy_precision": 0.9462,
+        "healthy_f1": 0.9362,
+        "roc_auc": 0.9534,
+        "pr_auc": 0.9007,
+        "confusion_matrix": {
+          "true_negatives_healthy": 88,
+          "false_positives_false_alarm": 7,
+          "false_negatives_missed_lsd": 5,
+          "true_positives_detected_lsd": 35,
+          "raw_matrix": [
+            [
+              88,
+              7
+            ],
+            [
+              5,
+              35
+            ]
+          ]
+        },
+        "per_class": {
+          "Healthy / Normal": {
+            "precision": 0.9462,
+            "recall": 0.9263,
+            "f1": 0.9362,
+            "support": 95
+          },
+          "Lumpy Skin Disease": {
+            "precision": 0.8333,
+            "recall": 0.875,
+            "f1": 0.8537,
+            "support": 40
+          }
+        },
+        "ece": 0.0478,
+        "ece_details": {
+          "ece": 0.0478,
+          "bins": [
+            {
+              "bin": "[0.50, 0.60]",
+              "sample_count": 3,
+              "accuracy": 1.0,
+              "confidence": 0.5594,
+              "gap": 0.4406
+            },
+            {
+              "bin": "[0.60, 0.70]",
+              "sample_count": 6,
+              "accuracy": 0.5,
+              "confidence": 0.647,
+              "gap": 0.147
+            },
+            {
+              "bin": "[0.70, 0.80]",
+              "sample_count": 7,
+              "accuracy": 0.5714,
+              "confidence": 0.7464,
+              "gap": 0.175
+            },
+            {
+              "bin": "[0.80, 0.90]",
+              "sample_count": 12,
+              "accuracy": 0.8333,
+              "confidence": 0.8618,
+              "gap": 0.0285
+            },
+            {
+              "bin": "[0.90, 1.00]",
+              "sample_count": 107,
+              "accuracy": 0.9626,
+              "confidence": 0.9877,
+              "gap": 0.0251
+            }
+          ]
+        },
+        "failure_count": 12,
+        "false_negatives_count": 5,
+        "false_positives_count": 7
+      }
+    },
+    {
+      "key": "efficientnet_b0_focal",
+      "architecture": "efficientnet_b0",
+      "loss_type": "focal",
+      "val_accuracy": 0.9481,
+      "val_macro_f1": 0.9383,
+      "val_lsd_recall": 0.925,
+      "val_lsd_precision": 0.9024,
+      "val_healthy_specificity": 0.9579,
+      "val_ece": 0.148,
+      "avg_cpu_latency_ms": 39.05,
+      "parameters_total": 4010110,
+      "checkpoint_size_mb": 15.59,
+      "best_val_metrics": {
+        "accuracy": 0.9481,
+        "macro_f1": 0.9383,
+        "macro_precision": 0.9353,
+        "macro_recall": 0.9414,
+        "lsd_sensitivity_recall": 0.925,
+        "lsd_precision": 0.9024,
+        "lsd_f1": 0.9136,
+        "healthy_specificity": 0.9579,
+        "healthy_precision": 0.9681,
+        "healthy_f1": 0.963,
+        "roc_auc": 0.9508,
+        "pr_auc": 0.9095,
+        "confusion_matrix": {
+          "true_negatives_healthy": 91,
+          "false_positives_false_alarm": 4,
+          "false_negatives_missed_lsd": 3,
+          "true_positives_detected_lsd": 37,
+          "raw_matrix": [
+            [
+              91,
+              4
+            ],
+            [
+              3,
+              37
+            ]
+          ]
+        },
+        "per_class": {
+          "Healthy / Normal": {
+            "precision": 0.9681,
+            "recall": 0.9579,
+            "f1": 0.963,
+            "support": 95
+          },
+          "Lumpy Skin Disease": {
+            "precision": 0.9024,
+            "recall": 0.925,
+            "f1": 0.9136,
+            "support": 40
+          }
+        },
+        "ece": 0.148,
+        "ece_details": {
+          "ece": 0.148,
+          "bins": [
+            {
+              "bin": "[0.50, 0.60]",
+              "sample_count": 15,
+              "accuracy": 0.8667,
+              "confidence": 0.5553,
+              "gap": 0.3114
+            },
+            {
+              "bin": "[0.60, 0.70]",
+              "sample_count": 19,
+              "accuracy": 0.9474,
+              "confidence": 0.6519,
+              "gap": 0.2954
+            },
+            {
+              "bin": "[0.70, 0.80]",
+              "sample_count": 26,
+              "accuracy": 0.9615,
+              "confidence": 0.7578,
+              "gap": 0.2037
+            },
+            {
+              "bin": "[0.80, 0.90]",
+              "sample_count": 35,
+              "accuracy": 0.9714,
+              "confidence": 0.8528,
+              "gap": 0.1186
+            },
+            {
+              "bin": "[0.90, 1.00]",
+              "sample_count": 40,
+              "accuracy": 0.95,
+              "confidence": 0.9436,
+              "gap": 0.0064
+            }
+          ]
+        },
+        "failure_count": 7,
+        "false_negatives_count": 3,
+        "false_positives_count": 4
+      }
+    },
+    {
+      "key": "efficientnet_b0_weighted_ce",
+      "architecture": "efficientnet_b0",
+      "loss_type": "weighted_ce",
+      "val_accuracy": 0.9407,
+      "val_macro_f1": 0.9299,
+      "val_lsd_recall": 0.925,
+      "val_lsd_precision": 0.881,
+      "val_healthy_specificity": 0.9474,
+      "val_ece": 0.0501,
+      "avg_cpu_latency_ms": 43.4,
+      "parameters_total": 4010110,
+      "checkpoint_size_mb": 15.59,
+      "best_val_metrics": {
+        "accuracy": 0.9407,
+        "macro_f1": 0.9299,
+        "macro_precision": 0.9243,
+        "macro_recall": 0.9362,
+        "lsd_sensitivity_recall": 0.925,
+        "lsd_precision": 0.881,
+        "lsd_f1": 0.9024,
+        "healthy_specificity": 0.9474,
+        "healthy_precision": 0.9677,
+        "healthy_f1": 0.9574,
+        "roc_auc": 0.9505,
+        "pr_auc": 0.9081,
+        "confusion_matrix": {
+          "true_negatives_healthy": 90,
+          "false_positives_false_alarm": 5,
+          "false_negatives_missed_lsd": 3,
+          "true_positives_detected_lsd": 37,
+          "raw_matrix": [
+            [
+              90,
+              5
+            ],
+            [
+              3,
+              37
+            ]
+          ]
+        },
+        "per_class": {
+          "Healthy / Normal": {
+            "precision": 0.9677,
+            "recall": 0.9474,
+            "f1": 0.9574,
+            "support": 95
+          },
+          "Lumpy Skin Disease": {
+            "precision": 0.881,
+            "recall": 0.925,
+            "f1": 0.9024,
+            "support": 40
+          }
+        },
+        "ece": 0.0501,
+        "ece_details": {
+          "ece": 0.0501,
+          "bins": [
+            {
+              "bin": "[0.50, 0.60]",
+              "sample_count": 7,
+              "accuracy": 0.7143,
+              "confidence": 0.5306,
+              "gap": 0.1837
+            },
+            {
+              "bin": "[0.60, 0.70]",
+              "sample_count": 3,
+              "accuracy": 1.0,
+              "confidence": 0.664,
+              "gap": 0.336
+            },
+            {
+              "bin": "[0.70, 0.80]",
+              "sample_count": 9,
+              "accuracy": 0.8889,
+              "confidence": 0.7653,
+              "gap": 0.1236
+            },
+            {
+              "bin": "[0.80, 0.90]",
+              "sample_count": 18,
+              "accuracy": 0.9444,
+              "confidence": 0.8452,
+              "gap": 0.0993
+            },
+            {
+              "bin": "[0.90, 1.00]",
+              "sample_count": 98,
+              "accuracy": 0.9592,
+              "confidence": 0.9752,
+              "gap": 0.016
+            }
+          ]
+        },
+        "failure_count": 8,
+        "false_negatives_count": 3,
+        "false_positives_count": 5
+      }
+    }
+  ],
+  "final_test_metrics": {
+    "accuracy": 0.9275,
+    "macro_f1": 0.9106,
+    "macro_precision": 0.933,
+    "macro_recall": 0.8943,
+    "lsd_sensitivity_recall": 0.8095,
+    "lsd_precision": 0.9444,
+    "lsd_f1": 0.8718,
+    "healthy_specificity": 0.9792,
+    "healthy_precision": 0.9216,
+    "healthy_f1": 0.9495,
+    "roc_auc": 0.9452,
+    "pr_auc": 0.9352,
+    "confusion_matrix": {
+      "true_negatives_healthy": 94,
+      "false_positives_false_alarm": 2,
+      "false_negatives_missed_lsd": 8,
+      "true_positives_detected_lsd": 34,
+      "raw_matrix": [
+        [
+          94,
+          2
+        ],
+        [
+          8,
+          34
+        ]
+      ]
+    },
+    "per_class": {
+      "Healthy / Normal": {
+        "precision": 0.9216,
+        "recall": 0.9792,
+        "f1": 0.9495,
+        "support": 96
+      },
+      "Lumpy Skin Disease": {
+        "precision": 0.9444,
+        "recall": 0.8095,
+        "f1": 0.8718,
+        "support": 42
+      }
+    },
+    "ece": 0.1673,
+    "ece_details": {
+      "ece": 0.1673,
+      "bins": [
+        {
+          "bin": "[0.50, 0.60]",
+          "sample_count": 19,
+          "accuracy": 0.7368,
+          "confidence": 0.5625,
+          "gap": 0.1743
+        },
+        {
+          "bin": "[0.60, 0.70]",
+          "sample_count": 22,
+          "accuracy": 0.9091,
+          "confidence": 0.6493,
+          "gap": 0.2597
+        },
+        {
+          "bin": "[0.70, 0.80]",
+          "sample_count": 41,
+          "accuracy": 0.9512,
+          "confidence": 0.7547,
+          "gap": 0.1965
+        },
+        {
+          "bin": "[0.80, 0.90]",
+          "sample_count": 37,
+          "accuracy": 0.973,
+          "confidence": 0.8463,
+          "gap": 0.1267
+        },
+        {
+          "bin": "[0.90, 1.00]",
+          "sample_count": 19,
+          "accuracy": 1.0,
+          "confidence": 0.9308,
+          "gap": 0.0692
+        }
+      ]
+    },
+    "failure_count": 10,
+    "false_negatives_count": 8,
+    "false_positives_count": 2
+  }
+}

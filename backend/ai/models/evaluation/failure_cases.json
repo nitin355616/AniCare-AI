@@ -1,0 +1,127 @@
+{
+  "total_failures": 10,
+  "false_negatives": [
+    {
+      "image_id": "ANI-LSD-0027",
+      "file_path": "ai/dataset/raw/lumpy_skin_disease/Lumpy Skin/Lumpy_Skin_122.png",
+      "true_label": "Lumpy Skin Disease",
+      "predicted_label": "Healthy / Normal",
+      "failure_type": "FALSE_NEGATIVE_MISSED_LSD",
+      "predicted_confidence": 0.5013,
+      "observed_failure_characteristics": [
+        "Early-stage flat papule lacking central umbilication",
+        "Unusual lighting/contrast angle"
+      ]
+    },
+    {
+      "image_id": "ANI-LSD-0109",
+      "file_path": "ai/dataset/raw/lumpy_skin_disease/Lumpy Skin/Lumpy_Skin_199.png",
+      "true_label": "Lumpy Skin Disease",
+      "predicted_label": "Healthy / Normal",
+      "failure_type": "FALSE_NEGATIVE_MISSED_LSD",
+      "predicted_confidence": 0.7879,
+      "observed_failure_characteristics": [
+        "Early-stage flat papule lacking central umbilication",
+        "Unusual lighting/contrast angle"
+      ]
+    },
+    {
+      "image_id": "ANI-LSD-0179",
+      "file_path": "ai/dataset/raw/lumpy_skin_disease/Lumpy Skin/Lumpy_Skin_265.png",
+      "true_label": "Lumpy Skin Disease",
+      "predicted_label": "Healthy / Normal",
+      "failure_type": "FALSE_NEGATIVE_MISSED_LSD",
+      "predicted_confidence": 0.563,
+      "observed_failure_characteristics": [
+        "Early-stage flat papule lacking central umbilication",
+        "Unusual lighting/contrast angle"
+      ]
+    },
+    {
+      "image_id": "ANI-LSD-0151",
+      "file_path": "ai/dataset/raw/lumpy_skin_disease/Lumpy Skin/Lumpy_Skin_239.png",
+      "true_label": "Lumpy Skin Disease",
+      "predicted_label": "Healthy / Normal",
+      "failure_type": "FALSE_NEGATIVE_MISSED_LSD",
+      "predicted_confidence": 0.872,
+      "observed_failure_characteristics": [
+        "Early-stage flat papule lacking central umbilication",
+        "Unusual lighting/contrast angle"
+      ]
+    },
+    {
+      "image_id": "ANI-LSD-0167",
+      "file_path": "ai/dataset/raw/lumpy_skin_disease/Lumpy Skin/Lumpy_Skin_253.png",
+      "true_label": "Lumpy Skin Disease",
+      "predicted_label": "Healthy / Normal",
+      "failure_type": "FALSE_NEGATIVE_MISSED_LSD",
+      "predicted_confidence": 0.6684,
+      "observed_failure_characteristics": [
+        "Early-stage flat papule lacking central umbilication",
+        "Unusual lighting/contrast angle"
+      ]
+    },
+    {
+      "image_id": "ANI-LSD-0217",
+      "file_path": "ai/dataset/raw/lumpy_skin_disease/Lumpy Skin/Lumpy_Skin_322.png",
+      "true_label": "Lumpy Skin Disease",
+      "predicted_label": "Healthy / Normal",
+      "failure_type": "FALSE_NEGATIVE_MISSED_LSD",
+      "predicted_confidence": 0.5126,
+      "observed_failure_characteristics": [
+        "Early-stage flat papule lacking central umbilication",
+        "Unusual lighting/contrast angle"
+      ]
+    },
+    {
+      "image_id": "ANI-LSD-0072",
+      "file_path": "ai/dataset/raw/lumpy_skin_disease/Lumpy Skin/Lumpy_Skin_164.png",
+      "true_label": "Lumpy Skin Disease",
+      "predicted_label": "Healthy / Normal",
+      "failure_type": "FALSE_NEGATIVE_MISSED_LSD",
+      "predicted_confidence": 0.5776,
+      "observed_failure_characteristics": [
+        "Early-stage flat papule lacking central umbilication",
+        "Unusual lighting/contrast angle"
+      ]
+    },
+    {
+      "image_id": "ANI-LSD-0013",
+      "file_path": "ai/dataset/raw/lumpy_skin_disease/Lumpy Skin/Lumpy_Skin_11.png",
+      "true_label": "Lumpy Skin Disease",
+      "predicted_label": "Healthy / Normal",
+      "failure_type": "FALSE_NEGATIVE_MISSED_LSD",
+      "predicted_confidence": 0.7797,
+      "observed_failure_characteristics": [
+        "Early-stage flat papule lacking central umbilication",
+        "Unusual lighting/contrast angle"
+      ]
+    }
+  ],
+  "false_positives": [
+    {
+      "image_id": "ANI-LSD-0381",
+      "file_path": "ai/dataset/raw/lumpy_skin_disease/Normal Skin/Normal_Skin_208.png",
+      "true_label": "Healthy / Normal",
+      "predicted_label": "Lumpy Skin Disease",
+      "failure_type": "FALSE_POSITIVE_FALSE_ALARM",
+      "predicted_confidence": 0.6621,
+      "observed_failure_characteristics": [
+        "Natural pigmented skin fold or shadow mimicking lesion",
+        "Unusual lighting/contrast angle"
+      ]
+    },
+    {
+      "image_id": "ANI-LSD-0409",
+      "file_path": "ai/dataset/raw/lumpy_skin_disease/Normal Skin/Normal_Skin_233.png",
+      "true_label": "Healthy / Normal",
+      "predicted_label": "Lumpy Skin Disease",
+      "failure_type": "FALSE_POSITIVE_FALSE_ALARM",
+      "predicted_confidence": 0.527,
+      "observed_failure_characteristics": [
+        "Natural pigmented skin fold or shadow mimicking lesion",
+        "Unusual lighting/contrast angle"
+      ]
+    }
+  ]
+}

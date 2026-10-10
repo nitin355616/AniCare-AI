@@ -1,0 +1,832 @@
+{
+  "dataset_name": "Lumpy Skin Images Dataset (Mendeley Data)",
+  "quarantine_count": 118,
+  "quarantined_records": [
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_429.png",
+      "filename": "Normal_Skin_429.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Exact byte duplicate of Lumpy_Skin_154.png (SHA-256: cf0decc97e5f837e)",
+      "tier": "DUPLICATE_EXACT"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_588.png",
+      "filename": "Normal_Skin_588.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Exact byte duplicate of Lumpy_Skin_229.png (SHA-256: 2999ccc06334fa3f)",
+      "tier": "DUPLICATE_EXACT"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_285.png",
+      "filename": "Lumpy_Skin_285.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Exact byte duplicate of Lumpy_Skin_269.png (SHA-256: ceac74a3c8234924)",
+      "tier": "DUPLICATE_EXACT"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_318.png",
+      "filename": "Lumpy_Skin_318.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Exact byte duplicate of Lumpy_Skin_317.png (SHA-256: ae48828d131be574)",
+      "tier": "DUPLICATE_EXACT"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_242.png",
+      "filename": "Normal_Skin_242.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Exact byte duplicate of Lumpy_Skin_86.png (SHA-256: 611ef573c5047bf5)",
+      "tier": "DUPLICATE_EXACT"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_154.png",
+      "filename": "Lumpy_Skin_154.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_15.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_18.png",
+      "filename": "Lumpy_Skin_18.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_126.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_21.png",
+      "filename": "Lumpy_Skin_21.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_175.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_211.png",
+      "filename": "Lumpy_Skin_211.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_13.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_257.png",
+      "filename": "Lumpy_Skin_257.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_24.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_266.png",
+      "filename": "Lumpy_Skin_266.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_147.png (dHash Hamming distance 2 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_27.png",
+      "filename": "Lumpy_Skin_27.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_109.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_287.png",
+      "filename": "Lumpy_Skin_287.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_248.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_290.png",
+      "filename": "Lumpy_Skin_290.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_136.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_292.png",
+      "filename": "Lumpy_Skin_292.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_122.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_293.png",
+      "filename": "Lumpy_Skin_293.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_106.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_294.png",
+      "filename": "Lumpy_Skin_294.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_168.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_297.png",
+      "filename": "Lumpy_Skin_297.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_273.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_299.png",
+      "filename": "Lumpy_Skin_299.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_224.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_301.png",
+      "filename": "Lumpy_Skin_301.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_105.png (dHash Hamming distance 2 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_302.png",
+      "filename": "Lumpy_Skin_302.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_146.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_304.png",
+      "filename": "Lumpy_Skin_304.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_264.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_305.png",
+      "filename": "Lumpy_Skin_305.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_114.png (dHash Hamming distance 2 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_306.png",
+      "filename": "Lumpy_Skin_306.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_229.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_309.png",
+      "filename": "Lumpy_Skin_309.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_223.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_310.png",
+      "filename": "Lumpy_Skin_310.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_208.png (dHash Hamming distance 5 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_312.png",
+      "filename": "Lumpy_Skin_312.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_110.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_313.png",
+      "filename": "Lumpy_Skin_313.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_118.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_316.png",
+      "filename": "Lumpy_Skin_316.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_235.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_317.png",
+      "filename": "Lumpy_Skin_317.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_267.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_320.png",
+      "filename": "Lumpy_Skin_320.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_259.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_324.png",
+      "filename": "Lumpy_Skin_324.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_144.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_327.png",
+      "filename": "Lumpy_Skin_327.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_214.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_33.png",
+      "filename": "Lumpy_Skin_33.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_247.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_37.png",
+      "filename": "Lumpy_Skin_37.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_20.png (dHash Hamming distance 4 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_39.png",
+      "filename": "Lumpy_Skin_39.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_249.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_40.png",
+      "filename": "Lumpy_Skin_40.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_141.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_42.png",
+      "filename": "Lumpy_Skin_42.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_153.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_43.png",
+      "filename": "Lumpy_Skin_43.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_263.png (dHash Hamming distance 2 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_5.png",
+      "filename": "Lumpy_Skin_5.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_159.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_53.png",
+      "filename": "Lumpy_Skin_53.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_19.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_54.png",
+      "filename": "Lumpy_Skin_54.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_23.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_55.png",
+      "filename": "Lumpy_Skin_55.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_289.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_57.png",
+      "filename": "Lumpy_Skin_57.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_303.png (dHash Hamming distance 2 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_58.png",
+      "filename": "Lumpy_Skin_58.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_20.png (dHash Hamming distance 5 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_60.png",
+      "filename": "Lumpy_Skin_60.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_291.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_63.png",
+      "filename": "Lumpy_Skin_63.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_295.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_64.png",
+      "filename": "Lumpy_Skin_64.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_12.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_65.png",
+      "filename": "Lumpy_Skin_65.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_296.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_7.png",
+      "filename": "Lumpy_Skin_7.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_140.png (dHash Hamming distance 2 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_8.png",
+      "filename": "Lumpy_Skin_8.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_176.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_84.png",
+      "filename": "Lumpy_Skin_84.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_144.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_87.png",
+      "filename": "Lumpy_Skin_87.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_26.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_88.png",
+      "filename": "Lumpy_Skin_88.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_3.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_9.png",
+      "filename": "Lumpy_Skin_9.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_62.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Lumpy Skin\\Lumpy_Skin_93.png",
+      "filename": "Lumpy_Skin_93.png",
+      "raw_class": "LUMPY SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_34.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_158.png",
+      "filename": "Normal_Skin_158.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_100.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_159.png",
+      "filename": "Normal_Skin_159.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_143.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_166.png",
+      "filename": "Normal_Skin_166.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_127.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_168.png",
+      "filename": "Normal_Skin_168.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_125.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_170.png",
+      "filename": "Normal_Skin_170.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_135.png (dHash Hamming distance 2 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_172.png",
+      "filename": "Normal_Skin_172.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_133.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_178.png",
+      "filename": "Normal_Skin_178.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_118.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_263.png",
+      "filename": "Normal_Skin_263.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_122.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_30.png",
+      "filename": "Normal_Skin_30.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_156.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_303.png",
+      "filename": "Normal_Skin_303.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_3.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_304.png",
+      "filename": "Normal_Skin_304.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_105.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_340.png",
+      "filename": "Normal_Skin_340.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_202.png (dHash Hamming distance 3 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_347.png",
+      "filename": "Normal_Skin_347.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_288.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_400.png",
+      "filename": "Normal_Skin_400.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_114.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_405.png",
+      "filename": "Normal_Skin_405.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_121.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_415.png",
+      "filename": "Normal_Skin_415.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_149.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_44.png",
+      "filename": "Normal_Skin_44.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_240.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_475.png",
+      "filename": "Normal_Skin_475.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_101.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_5.png",
+      "filename": "Normal_Skin_5.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_51.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_505.png",
+      "filename": "Normal_Skin_505.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_142.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_510.png",
+      "filename": "Normal_Skin_510.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Lumpy_Skin_51.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_54.png",
+      "filename": "Normal_Skin_54.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_171.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_541.png",
+      "filename": "Normal_Skin_541.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_132.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_57.png",
+      "filename": "Normal_Skin_57.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_473.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_577.png",
+      "filename": "Normal_Skin_577.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_148.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_59.png",
+      "filename": "Normal_Skin_59.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_267.png (dHash Hamming distance 3 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_598.png",
+      "filename": "Normal_Skin_598.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_27.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_60.png",
+      "filename": "Normal_Skin_60.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_531.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_61.png",
+      "filename": "Normal_Skin_61.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_575.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_626.png",
+      "filename": "Normal_Skin_626.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_138.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_64.png",
+      "filename": "Normal_Skin_64.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_294.png (dHash Hamming distance 2 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_648.png",
+      "filename": "Normal_Skin_648.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_530.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_652.png",
+      "filename": "Normal_Skin_652.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_231.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_656.png",
+      "filename": "Normal_Skin_656.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_157.png (dHash Hamming distance 2 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_659.png",
+      "filename": "Normal_Skin_659.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_175.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_66.png",
+      "filename": "Normal_Skin_66.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_590.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_662.png",
+      "filename": "Normal_Skin_662.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_512.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_677_(6).png",
+      "filename": "Normal_Skin_677_(6).png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_677_(10).png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_677_(8).png",
+      "filename": "Normal_Skin_677_(8).png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_677_(10).png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_677_(9).png",
+      "filename": "Normal_Skin_677_(9).png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_677_(10).png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_685.png",
+      "filename": "Normal_Skin_685.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_621.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_69.png",
+      "filename": "Normal_Skin_69.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_162.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_698.png",
+      "filename": "Normal_Skin_698.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_630.png (dHash Hamming distance 2 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_7.png",
+      "filename": "Normal_Skin_7.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_160.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_707.png",
+      "filename": "Normal_Skin_707.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_632.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_708.png",
+      "filename": "Normal_Skin_708.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_153.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_712.png",
+      "filename": "Normal_Skin_712.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_565.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_713.png",
+      "filename": "Normal_Skin_713.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_163.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_715.png",
+      "filename": "Normal_Skin_715.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_174.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_73.png",
+      "filename": "Normal_Skin_73.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_509.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_74.png",
+      "filename": "Normal_Skin_74.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_628.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_78.png",
+      "filename": "Normal_Skin_78.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_173.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_79.png",
+      "filename": "Normal_Skin_79.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_176.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_82.png",
+      "filename": "Normal_Skin_82.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_401.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_83.png",
+      "filename": "Normal_Skin_83.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_373.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_84.png",
+      "filename": "Normal_Skin_84.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_164.png (dHash Hamming distance 2 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_87.png",
+      "filename": "Normal_Skin_87.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_207.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_89.png",
+      "filename": "Normal_Skin_89.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_221.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_9.png",
+      "filename": "Normal_Skin_9.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_543.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_90.png",
+      "filename": "Normal_Skin_90.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_249.png (dHash Hamming distance 1 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_91.png",
+      "filename": "Normal_Skin_91.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_154.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    },
+    {
+      "file_path": "D:\\AniCare-AI\\backend\\ai\\dataset\\raw\\lumpy_skin_disease\\Normal Skin\\Normal_Skin_98.png",
+      "filename": "Normal_Skin_98.png",
+      "raw_class": "NORMAL SKIN",
+      "reason": "Perceptual near-duplicate of Normal_Skin_155.png (dHash Hamming distance 0 <= 5)",
+      "tier": "DUPLICATE_PERCEPTUAL"
+    }
+  ]
+}

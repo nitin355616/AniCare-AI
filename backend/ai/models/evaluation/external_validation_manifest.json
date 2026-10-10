@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0",
+  "dataset_partition": "Dataset B (External Validation)",
+  "governance_status": "PERMISSION_REQUIRED",
+  "acquired_records_count": 0,
+  "manifest_records": []
+}

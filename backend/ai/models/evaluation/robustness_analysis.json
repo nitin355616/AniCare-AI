@@ -1,0 +1,38 @@
+{
+  "validation_samples_count": 135,
+  "optimal_temperature": 1.4415,
+  "baseline_single_crop": {
+    "threshold": 0.5,
+    "tp": 37,
+    "fp": 4,
+    "tn": 91,
+    "fn": 3,
+    "accuracy": 0.9481,
+    "lsd_recall": 0.925,
+    "lsd_precision": 0.9024,
+    "healthy_specificity": 0.9579,
+    "lsd_f1": 0.9136,
+    "macro_f1": 0.9383,
+    "fpr": 0.0421,
+    "fnr": 0.075,
+    "avg_cpu_latency_ms": 24.23
+  },
+  "multicrop_tiled_inference": {
+    "threshold": 0.5,
+    "tp": 38,
+    "fp": 15,
+    "tn": 80,
+    "fn": 2,
+    "accuracy": 0.8741,
+    "lsd_recall": 0.95,
+    "lsd_precision": 0.717,
+    "healthy_specificity": 0.8421,
+    "lsd_f1": 0.8172,
+    "macro_f1": 0.8606,
+    "fpr": 0.1579,
+    "fnr": 0.05,
+    "avg_cpu_latency_ms": 98.55
+  },
+  "latency_increase_factor": 4.07,
+  "engineering_recommendation": "Multi-crop tiled inference improves sensitivity to localized lesions but increases CPU latency from 24.23 ms to 98.55 ms (4.1x). Recommendation: Retain single global 224x224 as default for fast edge triage; keep multi-crop inference as an optional high-precision secondary mode."
+}

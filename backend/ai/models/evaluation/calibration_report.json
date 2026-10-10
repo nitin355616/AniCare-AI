@@ -1,0 +1,46 @@
+{
+  "optimal_temperature": 1.4415,
+  "validation_ece_before": 0.148,
+  "validation_ece_after": 0.2089,
+  "test_ece_calibrated": 0.1673,
+  "test_calibration_bins": {
+    "ece": 0.1673,
+    "bins": [
+      {
+        "bin": "[0.50, 0.60]",
+        "sample_count": 19,
+        "accuracy": 0.7368,
+        "confidence": 0.5625,
+        "gap": 0.1743
+      },
+      {
+        "bin": "[0.60, 0.70]",
+        "sample_count": 22,
+        "accuracy": 0.9091,
+        "confidence": 0.6493,
+        "gap": 0.2597
+      },
+      {
+        "bin": "[0.70, 0.80]",
+        "sample_count": 41,
+        "accuracy": 0.9512,
+        "confidence": 0.7547,
+        "gap": 0.1965
+      },
+      {
+        "bin": "[0.80, 0.90]",
+        "sample_count": 37,
+        "accuracy": 0.973,
+        "confidence": 0.8463,
+        "gap": 0.1267
+      },
+      {
+        "bin": "[0.90, 1.00]",
+        "sample_count": 19,
+        "accuracy": 1.0,
+        "confidence": 0.9308,
+        "gap": 0.0692
+      }
+    ]
+  }
+}

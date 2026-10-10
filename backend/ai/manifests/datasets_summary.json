@@ -1,0 +1,119 @@
+{
+  "timestamp": "2026-10-09T18:50:00Z",
+  "tasks": {
+    "task_a_cattle_disease": {
+      "task": "Task A: Cattle Disease Classification",
+      "total_images": 3624,
+      "eligible_images": 3565,
+      "quarantined_images": 2,
+      "excluded_images": 57,
+      "classes": {
+        "Healthy / Normal": 1464,
+        "Foot and Mouth Disease": 895,
+        "Lumpy Skin Disease": 1206
+      },
+      "splits": {
+        "train": 2491,
+        "val": 532,
+        "test": 536
+      }
+    },
+    "task_b_species_classification": {
+      "task": "Task B: Animal Species Classification",
+      "total_images": 900,
+      "eligible_images": 900,
+      "species_counts": {
+        "Cattle": 150,
+        "Dog": 150,
+        "Cat": 150,
+        "Bird": 450
+      },
+      "splits": {
+        "train": 630,
+        "val": 133,
+        "test": 137
+      }
+    },
+    "task_c_muzzle_biometrics": {
+      "task": "Task C: Muzzle Biometric Identification",
+      "total_images": 1176,
+      "eligible_images": 1176,
+      "distinct_animals": 77,
+      "note": "Biometric print recognition. Never use for disease diagnostics."
+    },
+    "excluded_external_test": {
+      "task": "Excluded Unlabelled Test Partition",
+      "total_images": 12500,
+      "status": "EXCLUDED",
+      "reason": "Unlabelled Kaggle domestic animals (Dogs/Cats) without disease ground truth. Cannot be used for evaluation."
+    }
+  },
+  "datasets": [
+    {
+      "key": "fmd_cattle",
+      "name": "FMD Cattle Lesion Dataset",
+      "task": "Task A: Cattle Disease Classification",
+      "classes": [
+        "Healthy / Normal",
+        "Foot and Mouth Disease"
+      ],
+      "total_images": 342,
+      "provenance": "ICAR-IVRI / Mendeley Data",
+      "license": "CC BY 4.0",
+      "status": "VERIFIED_ACTIVE"
+    },
+    {
+      "key": "archive_cows",
+      "name": "Cows Disease Dataset (archive)",
+      "task": "Task A: Cattle Disease Classification",
+      "classes": [
+        "Healthy / Normal",
+        "Foot and Mouth Disease",
+        "Lumpy Skin Disease"
+      ],
+      "total_images": 3244,
+      "provenance": "Roboflow Universe / Kaggle",
+      "license": "Public Domain / CC0",
+      "status": "VERIFIED_ACTIVE"
+    },
+    {
+      "key": "muzzle_biometrics",
+      "name": "Sahiwal Cattle & Murrah Buffalo Muzzle Dataset",
+      "task": "Task C: Biometric Muzzle Identification",
+      "classes": [
+        "77 Individual Animal Muzzle Biometric IDs"
+      ],
+      "total_images": 1176,
+      "provenance": "ICAR-NDRI Karnal / Research Repository",
+      "license": "Academic Research Use",
+      "status": "VERIFIED_ACTIVE"
+    },
+    {
+      "key": "class3_species",
+      "name": "Class3 Animal Species & Breeds Dataset",
+      "task": "Task B: Animal Species Classification",
+      "classes": [
+        "Cattle",
+        "Dog",
+        "Cat",
+        "Bird"
+      ],
+      "total_images": 900,
+      "provenance": "Multi-Species Computer Vision Benchmark",
+      "license": "Open Source / Educational",
+      "status": "VERIFIED_ACTIVE"
+    },
+    {
+      "key": "kaggle_dogs_vs_cats_test",
+      "name": "Kaggle Dogs vs Cats Unlabelled Partition",
+      "task": "Excluded",
+      "classes": [
+        "Unlabelled"
+      ],
+      "total_images": 12500,
+      "provenance": "Kaggle Dogs vs Cats Competition",
+      "license": "Kaggle Competition Rules",
+      "status": "EXCLUDED_UNLABELLED"
+    }
+  ]
+}

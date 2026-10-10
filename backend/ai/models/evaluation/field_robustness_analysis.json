@@ -1,0 +1,266 @@
+{
+  "partition": "test",
+  "total_samples": 138,
+  "frozen_operating_threshold": 0.5,
+  "overall_partition_metrics": {
+    "threshold": 0.5,
+    "tp": 34,
+    "fp": 2,
+    "tn": 94,
+    "fn": 8,
+    "accuracy": 0.9275,
+    "lsd_recall": 0.8095,
+    "lsd_precision": 0.9444,
+    "healthy_specificity": 0.9792,
+    "lsd_f1": 0.8718,
+    "macro_f1": 0.9106,
+    "fpr": 0.0208,
+    "fnr": 0.1905
+  },
+  "multi_label_audit": {
+    "is_multi_label_taxonomy": true,
+    "audit_statement": "Robustness categories are multi-label annotations; therefore category sample counts may exceed the total test-set size.",
+    "unique_test_images_covered": 138,
+    "images_with_multiple_robustness_labels": 7,
+    "label_distribution_per_image": {
+      "1": 131,
+      "2": 5,
+      "3": 2
+    },
+    "unique_test_set_fn_count": 8,
+    "category_level_fn_counts": {
+      "EARLY_SUBTLE_PAPULES": 2,
+      "DISTANT_WHOLE_ANIMAL_FRAMING": 2,
+      "SMALL_LESION_AREA": 4,
+      "MUD_DEBRIS_OBSTRUCTION": 1,
+      "POOR_LIGHTING": 0,
+      "OCCLUSION": 0,
+      "BACKGROUND_COMPLEXITY": 1,
+      "IMAGE_QUALITY": 1,
+      "PARTIAL_BODY": 0,
+      "MOTION_BLUR": 1,
+      "NON_STANDARD_CAMERA": 0,
+      "UNKNOWN_FAILURE": 1,
+      "UNKNOWN_VISUAL_FAILURE": 1,
+      "UNCLASSIFIED_STANDARD_CASE": 0
+    },
+    "category_level_fn_sum": 14,
+    "fn_accounting_clarification": "Unique test-set FN count is exactly 8 (all 8 official test FNs). Category-level FNs sum to 14 because individual complex cases (e.g. distant standoff + small lesion ratio) exhibit multiple co-occurring environmental conditions."
+  },
+  "category_metrics": {
+    "EARLY_SUBTLE_PAPULES": {
+      "sample_count": 2,
+      "status": "insufficient sample size",
+      "sensitivity": "insufficient sample size",
+      "specificity": "insufficient sample size",
+      "precision": "insufficient sample size",
+      "recall": "insufficient sample size",
+      "f1": "insufficient sample size",
+      "false_negatives": 2,
+      "false_positives": 0,
+      "fn_sample_ids": [
+        "ANI-LSD-0027",
+        "ANI-LSD-0217"
+      ],
+      "fp_sample_ids": [],
+      "note": "Sample size n=2 < 5; percentage metrics withheld to prevent statistical distortion."
+    },
+    "DISTANT_WHOLE_ANIMAL_FRAMING": {
+      "sample_count": 2,
+      "status": "insufficient sample size",
+      "sensitivity": "insufficient sample size",
+      "specificity": "insufficient sample size",
+      "precision": "insufficient sample size",
+      "recall": "insufficient sample size",
+      "f1": "insufficient sample size",
+      "false_negatives": 2,
+      "false_positives": 0,
+      "fn_sample_ids": [
+        "ANI-LSD-0109",
+        "ANI-LSD-0151"
+      ],
+      "fp_sample_ids": [],
+      "note": "Sample size n=2 < 5; percentage metrics withheld to prevent statistical distortion."
+    },
+    "SMALL_LESION_AREA": {
+      "sample_count": 4,
+      "status": "insufficient sample size",
+      "sensitivity": "insufficient sample size",
+      "specificity": "insufficient sample size",
+      "precision": "insufficient sample size",
+      "recall": "insufficient sample size",
+      "f1": "insufficient sample size",
+      "false_negatives": 4,
+      "false_positives": 0,
+      "fn_sample_ids": [
+        "ANI-LSD-0109",
+        "ANI-LSD-0179",
+        "ANI-LSD-0151",
+        "ANI-LSD-0072"
+      ],
+      "fp_sample_ids": [],
+      "note": "Sample size n=4 < 5; percentage metrics withheld to prevent statistical distortion."
+    },
+    "MUD_DEBRIS_OBSTRUCTION": {
+      "sample_count": 1,
+      "status": "insufficient sample size",
+      "sensitivity": "insufficient sample size",
+      "specificity": "insufficient sample size",
+      "precision": "insufficient sample size",
+      "recall": "insufficient sample size",
+      "f1": "insufficient sample size",
+      "false_negatives": 1,
+      "false_positives": 0,
+      "fn_sample_ids": [
+        "ANI-LSD-0167"
+      ],
+      "fp_sample_ids": [],
+      "note": "Sample size n=1 < 5; percentage metrics withheld to prevent statistical distortion."
+    },
+    "POOR_LIGHTING": {
+      "sample_count": 2,
+      "status": "insufficient sample size",
+      "sensitivity": "insufficient sample size",
+      "specificity": "insufficient sample size",
+      "precision": "insufficient sample size",
+      "recall": "insufficient sample size",
+      "f1": "insufficient sample size",
+      "false_negatives": 0,
+      "false_positives": 0,
+      "fn_sample_ids": [],
+      "fp_sample_ids": [],
+      "note": "Sample size n=2 < 5; percentage metrics withheld to prevent statistical distortion."
+    },
+    "OCCLUSION": {
+      "sample_count": 0,
+      "status": "no samples in partition",
+      "sensitivity": "insufficient sample size",
+      "specificity": "insufficient sample size",
+      "precision": "insufficient sample size",
+      "recall": "insufficient sample size",
+      "f1": "insufficient sample size",
+      "false_negatives": 0,
+      "false_positives": 0
+    },
+    "BACKGROUND_COMPLEXITY": {
+      "sample_count": 1,
+      "status": "insufficient sample size",
+      "sensitivity": "insufficient sample size",
+      "specificity": "insufficient sample size",
+      "precision": "insufficient sample size",
+      "recall": "insufficient sample size",
+      "f1": "insufficient sample size",
+      "false_negatives": 1,
+      "false_positives": 0,
+      "fn_sample_ids": [
+        "ANI-LSD-0167"
+      ],
+      "fp_sample_ids": [],
+      "note": "Sample size n=1 < 5; percentage metrics withheld to prevent statistical distortion."
+    },
+    "IMAGE_QUALITY": {
+      "sample_count": 2,
+      "status": "insufficient sample size",
+      "sensitivity": "insufficient sample size",
+      "specificity": "insufficient sample size",
+      "precision": "insufficient sample size",
+      "recall": "insufficient sample size",
+      "f1": "insufficient sample size",
+      "false_negatives": 1,
+      "false_positives": 0,
+      "fn_sample_ids": [
+        "ANI-LSD-0217"
+      ],
+      "fp_sample_ids": [],
+      "note": "Sample size n=2 < 5; percentage metrics withheld to prevent statistical distortion."
+    },
+    "PARTIAL_BODY": {
+      "sample_count": 0,
+      "status": "no samples in partition",
+      "sensitivity": "insufficient sample size",
+      "specificity": "insufficient sample size",
+      "precision": "insufficient sample size",
+      "recall": "insufficient sample size",
+      "f1": "insufficient sample size",
+      "false_negatives": 0,
+      "false_positives": 0
+    },
+    "MOTION_BLUR": {
+      "sample_count": 3,
+      "status": "insufficient sample size",
+      "sensitivity": "insufficient sample size",
+      "specificity": "insufficient sample size",
+      "precision": "insufficient sample size",
+      "recall": "insufficient sample size",
+      "f1": "insufficient sample size",
+      "false_negatives": 1,
+      "false_positives": 0,
+      "fn_sample_ids": [
+        "ANI-LSD-0217"
+      ],
+      "fp_sample_ids": [],
+      "note": "Sample size n=3 < 5; percentage metrics withheld to prevent statistical distortion."
+    },
+    "NON_STANDARD_CAMERA": {
+      "sample_count": 0,
+      "status": "no samples in partition",
+      "sensitivity": "insufficient sample size",
+      "specificity": "insufficient sample size",
+      "precision": "insufficient sample size",
+      "recall": "insufficient sample size",
+      "f1": "insufficient sample size",
+      "false_negatives": 0,
+      "false_positives": 0
+    },
+    "UNKNOWN_FAILURE": {
+      "sample_count": 1,
+      "status": "insufficient sample size",
+      "sensitivity": "insufficient sample size",
+      "specificity": "insufficient sample size",
+      "precision": "insufficient sample size",
+      "recall": "insufficient sample size",
+      "f1": "insufficient sample size",
+      "false_negatives": 1,
+      "false_positives": 0,
+      "fn_sample_ids": [
+        "ANI-LSD-0013"
+      ],
+      "fp_sample_ids": [],
+      "note": "Sample size n=1 < 5; percentage metrics withheld to prevent statistical distortion."
+    },
+    "UNKNOWN_VISUAL_FAILURE": {
+      "sample_count": 1,
+      "status": "insufficient sample size",
+      "sensitivity": "insufficient sample size",
+      "specificity": "insufficient sample size",
+      "precision": "insufficient sample size",
+      "recall": "insufficient sample size",
+      "f1": "insufficient sample size",
+      "false_negatives": 1,
+      "false_positives": 0,
+      "fn_sample_ids": [
+        "ANI-LSD-0013"
+      ],
+      "fp_sample_ids": [],
+      "note": "Sample size n=1 < 5; percentage metrics withheld to prevent statistical distortion."
+    },
+    "UNCLASSIFIED_STANDARD_CASE": {
+      "sample_count": 128,
+      "status": "evaluated",
+      "sensitivity": 1.0,
+      "specificity": 0.9789,
+      "precision": 0.9429,
+      "recall": 1.0,
+      "f1": 0.9706,
+      "false_negatives": 0,
+      "false_positives": 2,
+      "fn_sample_ids": [],
+      "fp_sample_ids": [
+        "ANI-LSD-0381",
+        "ANI-LSD-0409"
+      ]
+    }
+  },
+  "highest_vulnerability_category": "UNCLASSIFIED_STANDARD_CASE",
+  "primary_failure_driver": "Mud/debris obstruction, small lesion area, and distant whole-animal framing represent the primary real-world failure modes, diluting high-frequency nodular textures during global spatial pooling."
+}

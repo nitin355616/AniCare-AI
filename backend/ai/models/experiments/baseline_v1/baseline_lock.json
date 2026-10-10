@@ -1,0 +1,12 @@
+{
+  "baseline_id": "MODEL_BASELINE_V1",
+  "model_name": "anicare_vision_bovine_v1",
+  "status": "IMMUTABLE_PRODUCTION_BASELINE",
+  "architecture": "EfficientNet-B0",
+  "operating_threshold": 0.5,
+  "held_out_test_sensitivity": 0.8095,
+  "held_out_test_specificity": 0.9792,
+  "held_out_test_macro_f1": 0.9106,
+  "weights_checksum": "verified",
+  "protection": "READ_ONLY_LOCK"
+}

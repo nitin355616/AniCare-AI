@@ -1,0 +1,52 @@
+{
+  "governance_version": "1.0",
+  "dataset_identity": "DATASET-B-EXTERNAL-VALIDATION",
+  "candidate_sources": [
+    {
+      "source_id": "DATASET-B-CANDIDATE-AAU",
+      "source_name": "AAU Anand Veterinary College Clinical Teaching Hospital Archives",
+      "institution": "Anand Agricultural University (AAU)",
+      "permission_state": "PERMISSION_REQUIRED",
+      "license_type": "Institutional Educational Use / University Clinical IP",
+      "target_species": ["Cattle"],
+      "target_disease": ["Lumpy Skin Disease"],
+      "dta_status": "INTER_INSTITUTIONAL_DTA_PENDING"
+    },
+    {
+      "source_id": "DATASET-B-CANDIDATE-ICAR",
+      "source_name": "ICAR-DFMD National Bovine Viral & Vesicular Repository",
+      "institution": "ICAR Directorate of Foot and Mouth Disease",
+      "permission_state": "PERMISSION_REQUIRED",
+      "license_type": "Government Institutional Research License",
+      "target_species": ["Cattle"],
+      "target_disease": ["Lumpy Skin Disease"],
+      "dta_status": "FORMAL_MOU_REQUEST_PENDING"
+    }
+  ],
+  "permission_state": "PERMISSION_REQUIRED",
+  "checksum": "PENDING_ACQUISITION",
+  "sample_count": 0,
+  "valid_count": 0,
+  "rejected_count": 0,
+  "ambiguous_count": 0,
+  "duplicate_count": 0,
+  "species": "Cattle",
+  "disease": "Lumpy Skin Disease",
+  "model_version": "EfficientNet-B0 (anicare_vision_bovine_v1.onnx)",
+  "threshold": 0.50,
+  "timestamp": "2026-10-08T15:20:00Z",
+  "governance_rules": {
+    "zero_training_leakage": true,
+    "no_threshold_tuning": true,
+    "no_model_adaptation": true,
+    "ten_point_legal_ethical_gate_enforced": true,
+    "cross_dataset_deduplication_enforced": true,
+    "zero_data_fabrication_policy": true
+  },
+  "limitations": [
+    "Zero legally verified production images currently available for Dataset B.",
+    "Dataset B permission status is PERMISSION_REQUIRED.",
+    "External validation remains pending until formal Data Transfer Agreements are executed.",
+    "Dataset A held-out test set (N=138, Sensitivity: 80.95%, Specificity: 97.92%) remains the sole verified scientific benchmark."
+  ]
+}

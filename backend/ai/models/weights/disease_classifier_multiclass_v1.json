@@ -1,0 +1,122 @@
+{
+  "model_name": "disease_classifier_multiclass_v1",
+  "model_version": "AniCare-MultiDisease-Vision v1.0",
+  "task": "Task A: Bovine Disease Classification",
+  "architecture": "mobilenet_v2",
+  "num_classes": 3,
+  "class_names": [
+    "Healthy / Normal",
+    "Foot and Mouth Disease",
+    "Lumpy Skin Disease"
+  ],
+  "class_to_idx": {
+    "Healthy / Normal": 0,
+    "Foot and Mouth Disease": 1,
+    "Lumpy Skin Disease": 2
+  },
+  "dataset_sources": [
+    "FMD_Cattle",
+    "Cows Disease Dataset (archive)"
+  ],
+  "dataset_manifest": "backend/ai/manifests/manifest_disease_a.json",
+  "hardware": "cpu",
+  "train_samples": 2491,
+  "val_samples": 532,
+  "test_samples": 536,
+  "test_metrics": {
+    "accuracy": 0.9272,
+    "macro_f1": 0.9266,
+    "weighted_f1": 0.9271,
+    "confusion_matrix": [
+      [
+        206,
+        4,
+        10
+      ],
+      [
+        16,
+        117,
+        1
+      ],
+      [
+        7,
+        1,
+        174
+      ]
+    ],
+    "classification_report": {
+      "Healthy / Normal": {
+        "precision": 0.8995633187772926,
+        "recall": 0.9363636363636364,
+        "f1-score": 0.9175946547884187,
+        "support": 220.0
+      },
+      "Foot and Mouth Disease": {
+        "precision": 0.9590163934426229,
+        "recall": 0.8731343283582089,
+        "f1-score": 0.9140625,
+        "support": 134.0
+      },
+      "Lumpy Skin Disease": {
+        "precision": 0.9405405405405406,
+        "recall": 0.9560439560439561,
+        "f1-score": 0.9482288828337875,
+        "support": 182.0
+      },
+      "accuracy": 0.9272388059701493,
+      "macro avg": {
+        "precision": 0.9330400842534853,
+        "recall": 0.9218473069219338,
+        "f1-score": 0.926628679207402,
+        "support": 536.0
+      },
+      "weighted avg": {
+        "precision": 0.9283404948333848,
+        "recall": 0.9272388059701493,
+        "f1-score": 0.9271135368082116,
+        "support": 536.0
+      }
+    }
+  },
+  "training_history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.3618,
+      "train_accuracy": 0.8626,
+      "train_macro_f1": 0.8622,
+      "val_loss": 0.2628,
+      "val_accuracy": 0.886,
+      "val_macro_f1": 0.8873
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.1626,
+      "train_accuracy": 0.9425,
+      "train_macro_f1": 0.9438,
+      "val_loss": 0.1746,
+      "val_accuracy": 0.9271,
+      "val_macro_f1": 0.9302
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.1434,
+      "train_accuracy": 0.9441,
+      "train_macro_f1": 0.9442,
+      "val_loss": 0.1599,
+      "val_accuracy": 0.9383,
+      "val_macro_f1": 0.942
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.1203,
+      "train_accuracy": 0.9557,
+      "train_macro_f1": 0.9556,
+      "val_loss": 0.1777,
+      "val_accuracy": 0.9477,
+      "val_macro_f1": 0.9505
+    }
+  ],
+  "training_time_seconds": 763.45,
+  "created_at": "2026-10-09T17:22:12Z",
+  "disclaimer": "AI-assisted screening triage. Never replaces on-site clinical examination by a licensed veterinarian."
+}
