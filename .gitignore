@@ -23,3 +23,4 @@ backend/uploads/*.jpeg
 Thumbs.db
 .vscode/
 .idea/
+backend/ai/dataset/raw/lumpy_skin_disease/Lumpy_Skin_Images_Dataset.zip
